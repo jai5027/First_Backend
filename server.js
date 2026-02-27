@@ -49,7 +49,7 @@ app.patch('/user/:id', async (req, res) => {
     const name = req.body.name
     
     await userModel.findOneAndUpdate(
-        { _id: id },      // correct way
+        { _id: id },      
         { name: name }
     )
 
